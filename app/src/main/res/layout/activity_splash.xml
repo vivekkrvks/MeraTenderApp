@@ -10,26 +10,31 @@
 
     android:layout_height="match_parent"
 
-    android:orientation="vertical"
+    android:background="#CDCDCD"
 
+    android:orientation="vertical"
     tools:context=".SplashActivity">
 
 
     <ImageView
 
+        android:id="@+id/splashImg"
+
         android:layout_width="match_parent"
 
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
 
-        android:src="@drawable/logo"
+        android:background="#FFFFFF"
 
-        android:scaleType="centerCrop"
-
+        android:contentDescription="@string/splashimage"
         android:padding="50dp"
-
-        android:layout_marginTop="220dp"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        tools:ignore="ImageContrastCheck" />
 
     <ProgressBar
+
+        style="?android:attr/progressBarStyleHorizontal"
 
         android:layout_width="220dp"
 
@@ -37,19 +42,16 @@
 
         android:layout_gravity="center_horizontal"
 
-        style="?android:attr/progressBarStyleHorizontal"
-
-        android:max="100"
+        android:layout_marginTop="-100dp"
 
         android:indeterminate="true"
 
-        android:progress="0"
+        android:max="100"
 
-        android:layout_marginTop="100dp"
+        android:progress="0"
 
 
         />
-
 
 
 </LinearLayout>
